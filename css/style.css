@@ -8,18 +8,15 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    /* font-weight: 300; */
-    /* background-color: #121212ec; */
-    /* color: #fff; */
 }
 
 header {
     display: flex;
     width: 100vw;
-    height: 60px;
     padding: 15px 10px 15px 10px;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
-    /* overflow: hidden; */
+    background-color: #fff!important;
+    z-index: 1;
 }
 
 
@@ -55,9 +52,19 @@ h2 {
 
 /* SPECIFIC */
 
-.navbar{
+.top-menu{
     display: flex;
     width: 100%;
+}
+
+.sticky {
+position: fixed;
+top: 0;
+width: 100%;
+}
+
+.sticky + .content {
+padding-top: 60px;
 }
 
 .hamburger-menu {
@@ -73,13 +80,15 @@ h2 {
 
 .container {
     max-width: 980px;
-    margin: 20px auto auto auto;
+    margin: 80px auto auto auto;
+    overflow-y: auto;
 }
 
 .columns {
     display: flex;
     padding: 0 24px;
     margin: 1em 0;
+    align-items: flex-start;
 }
 
 .col {
@@ -99,6 +108,8 @@ h2 {
 }
 
 .col-bg { 
-    background-color: #212614;
+    background-color: #516693;
+    opacity: 60%;
     color: #fff;
 }
+
