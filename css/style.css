@@ -80,7 +80,7 @@ padding-top: 60px;
 
 .container {
     max-width: 980px;
-    margin: 80px auto auto auto;
+    margin: 60px auto auto auto;
     overflow-y: auto;
 }
 
@@ -113,3 +113,14 @@ padding-top: 60px;
     color: #fff;
 }
 
+/*  MEDIA QUERIES */
+
+@media (max-width: 760px) {
+    .columns {
+        flex-direction: column;
+    }
+
+    .col {
+        width: 100%;
+    }
+}
