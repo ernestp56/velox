@@ -1,0 +1,85 @@
+/* GENERAL */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    /* font-weight: 300; */
+    /* background-color: #121212ec; */
+    /* color: #fff; */
+}
+
+header {
+    display: flex;
+    width: 100vw;
+    height: 60px;
+    padding: 15px 10px 15px 10px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
+    /* overflow: hidden; */
+}
+
+
+button{
+    position: absolute;
+    background: none;
+    border: none;
+    transition: background-color 0.3s, color 0.3s; 
+    text-transform: uppercase;
+}
+
+button:hover { 
+    font-weight: 600;
+    -webkit-tap-highlight-color: transparent;
+}
+button:hover i { margin-right: 20px; }
+
+button:focus {
+    outline: none;
+}
+
+/* TYPOGRAPHY */
+
+h1 {
+    font-size: 3 rem;
+}
+
+h2 {
+    font-size: 2 rem;
+}
+
+p {
+    font-size: 1 rem;
+    margin: 0 auto;
+}
+/* SPECIFIC */
+
+.navbar{
+    display: flex;
+    width: 100%;
+}
+
+.hamburger-menu {
+    color: #516693;
+    margin: 0px auto;
+    font-size: 30px
+}
+
+.cleanup {
+    margin: 0 auto;
+    max-height: 30px;
+}
+
+.container {
+    max-width: 980px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.columns {
+    display: flex;
+    font-size: 1em;
+}
