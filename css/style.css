@@ -80,14 +80,14 @@ h4 {
 }
 
 .sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0; /* required */
 }
 
-.sticky + .content {
+/* .sticky + .content {
 padding-top: 60px;
-}
+} */
 
 .hamburger-menu {
     color: #516693;
@@ -143,8 +143,8 @@ padding-top: 60px;
 
 .main-container {
     max-width: 1200px;
-    top: 60px;
-    margin: auto;
+    position: relative;
+    /* margin: auto; */
     overflow-y: auto;
 }
 
