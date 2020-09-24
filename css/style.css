@@ -143,7 +143,8 @@ padding-top: 60px;
 
 .main-container {
     max-width: 1200px;
-    margin: 60px auto auto auto;
+    top: 60px;
+    margin: auto;
     overflow-y: auto;
 }
 
