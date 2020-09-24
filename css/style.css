@@ -93,11 +93,23 @@ h4 {
 padding-top: 60px;
 } */
 
-.hamburger-menu {
+.menu-ham {
     color: #516693;
     font-size: 30px;
     right: 0.5em;
 }
+
+#ham:hover {
+    transition: all 0.5s ease-in-out 0s;
+}
+
+/* 
+-webkit-transform: rotate(0deg);
+-moz-transform: rotate(0deg);
+transform: rotate(0deg);
+-webkit-transition: all 0.5s ease-in-out 0s;
+-moz-transition: all 0.5s ease-in-out 0s;
+-o-transition: all 0.5s ease-in-out 0s; */
 
 .cleanup {
     margin: 0 auto;
@@ -112,6 +124,8 @@ padding-top: 60px;
 /* NAVBAR MENU */
 
 
+
+
 .overlay {
     height: 0%;
     width: 100%;
@@ -123,26 +137,29 @@ padding-top: 60px;
     background-color: #fff;
     transition: 0.5s;
     overflow: hidden;
-  }
-  
-  .overlay-content {
+}
+
+.overlay-content {
     position: relative;
     top: 25%;
     width: 100%;
     text-align: center;
     margin-top: 30px;
     overflow-y: hidden;
-  }
-  
-  .overlay a {
+}
+
+.overlay a {
     padding: 8px;
     text-decoration: none;
     font-size: 36px;
     color: #707070;
     display: block;
     transition: 0.3s;
-  }
+}
 
+.active {
+    height: 100%!important;
+}
 /* MAIN BODY */
 
 .main-container {

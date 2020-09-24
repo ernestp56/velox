@@ -10,16 +10,23 @@ function myFunction() {
   }
 }
 
+// Mobile Hamburger menu function
 function toggleMenu() {
-    var icon = document.getElementById("hamburger").textContent;
+    var icon = document.getElementById("ham").textContent;
     var x = icon === "menu" ? "clear" : "menu";
     if (icon === "menu") {
-        document.getElementById("hamburger").textContent = x;
-        document.getElementById("myNav").style.height = "100%";
+        document.getElementById("ham").textContent = x;
+        document.getElementById("menu-wrapper").classList.toggle("active");
         document.body.style.overflowY = "hidden"
     } else {
-        document.getElementById("hamburger").textContent = x;
-        document.getElementById("myNav").style.height = "0%";
+        document.getElementById("ham").textContent = x;
+        document.getElementById("menu-wrapper").classList.toggle("active");
         document.body.style.overflowY = "auto"
     }
+}
+
+const toggleHam = function(e) {
+  document.getElementById('sm_menu_ham').classList.toggle('open');
+  document.getElementById('sm_menu_wrapper').classList.toggle('active');
+  document.getElementsByTagName('BODY')[0].classList.toggle('mobile-menu-open')
 }
