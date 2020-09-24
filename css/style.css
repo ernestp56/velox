@@ -67,7 +67,7 @@ h4 {
 }
 
 .desktop {
-    grid-template-columns: 2fr 6fr 2fr;
+    grid-template-columns: 3fr 6fr 3fr;
 }
 
 .mobile {
@@ -76,13 +76,13 @@ h4 {
 
 .info {
     display: grid;
-    grid-template-columns: 2fr 2fr;
+    grid-template-columns: 3fr 1fr;
 }
 
 .sticky {
-position: fixed;
-top: 0;
-width: 100%;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 .sticky + .content {
@@ -98,6 +98,11 @@ padding-top: 60px;
 .cleanup {
     margin: 0 auto;
     max-height: 30px;
+}
+
+.contact-header {
+    justify-self: start;
+
 }
 
 /* NAVBAR MENU */
