@@ -137,29 +137,6 @@ padding-top: 60px;
     transform: rotate(135deg)
 }
 
-
-.menu-ham {
-    color: #516693;
-    font-size: 30px;
-    right: 0.5em;
-}
-
-.menu-ham.active:before {
-    transform: translateY(12px) rotate(135deg);
-}
-.menu-ham:after {
-    transform: translateY(12px) rotate(135deg);
-}
-
-
-/* 
--webkit-transform: rotate(0deg);
--moz-transform: rotate(0deg);
-transform: rotate(0deg);
--webkit-transition: all 0.5s ease-in-out 0s;
--moz-transition: all 0.5s ease-in-out 0s;
--o-transition: all 0.5s ease-in-out 0s; */
-
 .cleanup {
     margin: 0 auto;
     max-height: 30px;
