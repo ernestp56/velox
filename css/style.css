@@ -30,7 +30,6 @@ button:hover {
     font-weight: 600;
     -webkit-tap-highlight-color: transparent;
 }
-button:hover i { margin-right: 20px; }
 
 button:focus {
     outline: none;
@@ -93,13 +92,12 @@ padding-top: 60px;
 .hamburger-menu {
     color: #516693;
     font-size: 30px;
-    right: 0em;
+    right: 0.5em;
 }
 
 .cleanup {
     margin: 0 auto;
     max-height: 30px;
-    justify-self: end;
 }
 
 /* NAVBAR MENU */
