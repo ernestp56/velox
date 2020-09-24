@@ -102,6 +102,50 @@ padding-top: 60px;
     justify-self: end;
 }
 
+/* NAVBAR MENU */
+
+
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 60px;
+    left: 0;
+    background-color: #fff;
+    background-color: #fff;
+    overflow-y: hidden;
+    transition: 0.5s;
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  
+  @media screen and (max-height: 450px) {
+    .overlay {overflow-y: auto;}
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+  }
+
 /* MAIN BODY */
 
 .main-container {
@@ -177,7 +221,7 @@ padding-top: 60px;
     grid-gap:1em;
     grid-auto-rows: minmax(100px, auto);
     /* justify-items:center; */
-    padding: 0 24px;
+    padding: 0 2em;
     margin: 0 auto;
 }
 

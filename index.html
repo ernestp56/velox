@@ -12,7 +12,7 @@
     <body>
         <header id="navbar">
             <div class="top-menu mobile" id="top-menu-mobile">
-                <button class="hamburger-menu" onclick="openMenu()"><i class="material-icons" id="hamburger" inline="true">menu</i></button>
+                <button class="hamburger-menu" onclick="toggleMenu()"><i class="material-icons" id="hamburger" inline="true">menu</i></button>
                 <img src="cleanup.jpg" class="cleanup">
             </div>
             <div class="top-menu desktop" id="top-menu-desktop">
@@ -25,6 +25,14 @@
                 </div>
             </div>
         </header>
+
+        <div id="myNav" class="overlay">
+            <div class="overlay-content">
+                <a href="#">About us</a>
+                <a href="#">Contact</a>
+            </div>
+        
+        </div>
 
         <div class="main-container">
             <div class="columns">

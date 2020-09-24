@@ -10,8 +10,14 @@ function myFunction() {
   }
 }
 
-function openMenu() {
+function toggleMenu() {
     var icon = document.getElementById("hamburger").textContent;
     var x = icon === "menu" ? "clear" : "menu";
-    document.getElementById("hamburger").textContent = x;
+    if (icon === "menu") {
+        document.getElementById("hamburger").textContent = x;
+        document.getElementById("myNav").style.height = "100%";
+    } else {
+        document.getElementById("hamburger").textContent = x;
+        document.getElementById("myNav").style.height = "0%";
+    }
 }
