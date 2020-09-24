@@ -11,22 +11,15 @@ function myFunction() {
 }
 
 // Mobile Hamburger menu function
-function toggleMenu() {
-    var icon = document.getElementById("ham").textContent;
-    var x = icon === "menu" ? "clear" : "menu";
-    if (icon === "menu") {
-        document.getElementById("ham").textContent = x;
-        document.getElementById("menu-wrapper").classList.toggle("active");
-        document.body.style.overflowY = "hidden"
-    } else {
-        document.getElementById("ham").textContent = x;
-        document.getElementById("menu-wrapper").classList.toggle("active");
-        document.body.style.overflowY = "auto"
-    }
-}
-
-const toggleHam = function(e) {
-  document.getElementById('sm_menu_ham').classList.toggle('open');
-  document.getElementById('sm_menu_wrapper').classList.toggle('active');
-  document.getElementsByTagName('BODY')[0].classList.toggle('mobile-menu-open')
-}
+document.getElementById('ham').addEventListener('click', () => {
+  document.getElementById('ham').classList.toggle('active');
+  var icon = document.getElementById("ham").textContent;
+  var x = icon === "menu" ? "clear" : "menu";
+  if (icon === "menu") {
+      document.getElementById("menu-wrapper").classList.toggle("active");
+      document.body.style.overflowY = "hidden"
+  } else {
+    document.getElementById("menu-wrapper").classList.toggle("active");
+    document.body.style.overflowY = "auto"
+  }
+})
