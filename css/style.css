@@ -11,8 +11,6 @@ body {
 }
 
 header {
-    
-    /* width: 100vw; */
     padding: 15px 10px 15px 10px;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
     background-color: #fff!important;
@@ -59,22 +57,19 @@ h4 {
 
 /* SPECIFIC */
 
+/* TOP MENU */
 .top-menu{
     display: grid;
     align-items: center;
-    /* width: 100%; */
 }
 
 .desktop {
     grid-template-columns: 2fr 6fr 2fr;
 }
 
-
 .mobile {
     grid-template-columns:1fr;
 }
-
-
 
 .info {
     display: grid;
@@ -103,7 +98,9 @@ padding-top: 60px;
     justify-self: end;
 }
 
-.container {
+/* MAIN BODY */
+
+.main-container {
     max-width: 1200px;
     margin: 60px auto auto auto;
     overflow-y: auto;
@@ -166,5 +163,27 @@ padding-top: 60px;
 .Footer {
     padding: 72px;
     background-color: #212a2f;
+}
 
+.container {
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-gap:1em;
+    grid-auto-rows: minmax(100px, auto);
+    /* justify-items:center; */
+    padding: 0 24px;
+    margin: 0 auto;
+}
+
+.container > div {
+    color: #fff;
+    padding: 1em;
+    /* background-color: #eee; */
+}
+
+@media (max-width: 600px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
 }
