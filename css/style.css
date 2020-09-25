@@ -148,11 +148,6 @@ padding-top: 60px;
     transform: rotate(135deg)
 }
 
-.cleanup {
-    margin: 0 auto;
-    max-height: 30px;
-}
-
 .contact-header {
     justify-self: start;
 }
