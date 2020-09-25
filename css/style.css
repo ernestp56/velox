@@ -10,6 +10,7 @@
 body {
     font-family: 'Montserrat', sans-serif;
     min-height: 100vh;
+    min-width: 250px;
     margin: 0;
 }
 
@@ -371,20 +372,6 @@ padding-top: 60px;
     object-fit: cover;
 }
 
-@media (min-width: 750px) {
-    .carousel-wrapper {
-        grid-column: 1/3;
-    }
-
-    .main-container {
-        padding: 0em 2em 2em 2em;
-    }
-
-    .slide > img {
-        max-height: 600px;
-    }
-}
-
 .prev, .next {
     cursor: pointer;
     position: absolute;
@@ -408,3 +395,24 @@ padding-top: 60px;
     left: 0;
     border-radius: 3px 0 0 3px;
 }
+
+@media (min-width: 600px) and (max-width: 800px) {
+    .carousel-wrapper {
+        grid-column: 1/4;
+    }
+}
+
+@media (min-width: 750px) {
+    .carousel-wrapper {
+        grid-column: 1/3;
+    }
+
+    .main-container {
+        padding: 0em 2em 2em 2em;
+    }
+
+    .slide > img {
+        max-height: 600px;
+    }
+}
+
