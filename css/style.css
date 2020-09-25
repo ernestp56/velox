@@ -307,8 +307,6 @@ padding-top: 60px;
 }
 
 
-
-
 /* CAROUSEL */
 
 .carousel-wrapper {
@@ -405,6 +403,7 @@ padding-top: 60px;
 @media (min-width: 750px) {
     .carousel-wrapper {
         grid-column: 1/3;
+        align-items: center;
     }
 
     .main-container {
