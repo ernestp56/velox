@@ -155,7 +155,7 @@ padding-top: 60px;
     height: 0%;
     width: 100%;
     position: fixed;
-    z-index: 1;
+    z-index: 2;
     top: 60px;
     left: 0;
     background-color: #fff;
@@ -283,6 +283,23 @@ padding-top: 60px;
         grid-template-columns: 1fr;
     }
 
+    .slide > img {
+        max-height: 300px;
+    }
+}
+
+@media (max-height: 570px) {
+    .slide > img {
+        max-height: 200px;
+    }
+}
+
+@media (min-height: 570px) and (max-height:900px) {
+
+    .slide > img {
+        /* max-height: 100%; */
+        max-height: 350px;
+    }
 }
 
 
