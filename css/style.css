@@ -255,6 +255,7 @@ padding-top: 60px;
 
 .container {
     max-width: 1200px;
+    min-width: 250px;
     display: grid;
     grid-template-columns: 1fr 1fr 2fr;
     grid-gap:1em;
@@ -278,7 +279,7 @@ padding-top: 60px;
     padding: 0.5em 1em 0em 0em;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 450px) {
     .main-container {
         grid-template-columns: 1fr;
     }
@@ -289,6 +290,10 @@ padding-top: 60px;
     
     .Footer > .container {
         grid-template-columns: 1fr;
+    }
+
+    .Footer {
+        padding: 3em 0;
     }
 
     .slide > img {
@@ -400,8 +405,8 @@ padding-top: 60px;
     }
 }
 
-@media (max-device-width: 600px) {
-    .container {
+@media (min-device-width:450px) and (max-device-width: 700px) {
+    .main-container {
         grid-template-columns: 1fr 1fr;
         
     }
