@@ -406,6 +406,10 @@ padding-top: 60px;
         grid-column: 1/3;
         align-items: center;
     }
+
+    .slide > img {
+        max-height: 350px;
+    }
     
 }
 
