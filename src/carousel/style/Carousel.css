@@ -30,18 +30,18 @@
 	z-index: 1;
 }
 
-.carousel > nav a {
+.carousel > nav div {
 	color: #000;
 	font-size: 14px;
 	opacity: .2;
 	text-decoration: none;
 }
 
-.carousel > nav a:hover {
+.carousel > nav div:hover {
 	opacity: .5;
 }
 
-.carousel > nav a.current {
+.carousel > nav div.current {
 	opacity: 1;
 }
 

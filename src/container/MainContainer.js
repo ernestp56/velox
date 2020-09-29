@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Carousel from '../carousel/Carousel'
+import Footer from '../footer/Footer'
 
 class MainContainer extends Component {
     constructor() {

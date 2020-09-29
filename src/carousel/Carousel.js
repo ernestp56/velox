@@ -14,15 +14,15 @@ class Carousel extends Component {
                     <nav />
                     <div class="slide-container">
                         <div class="slide">
-                            <img src="public/product/bottle.jpg" />
-                            <a class="prev">&#10094;</a>
-                            <a class="next">&#10095;</a>
+                            <img src="public/product/bottle.jpg" alt="Product - Bottle" />
+                            <div class="prev">&#10094;</div>
+                            <div class="next">&#10095;</div>
                         </div>
                         <div class="slide">
-                            <img src="public/product/set.jpg" />
+                            <img src="public/product/set.jpg" alt="Product - Set" />
                         </div>
                         <div class="slide">
-                            <img src="public/product/cure.jpg" />
+                            <img src="public/product/cure.jpg" alt="Product - Cure" />
                         </div>
                     </div>
                 </section>
