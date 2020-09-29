@@ -30,3 +30,31 @@
 .box > ul > img {
     padding: 0.5em 1em 0em 0em;
 }
+
+@media (max-width: 450px) {
+    .Footer > h3, .box {
+        text-align: center;
+    }
+    
+    .Footer > .container {
+        grid-template-columns: 1fr;
+    }
+
+    .Footer {
+        padding: 3em 0;
+    }
+
+    .slide > img {
+        max-height: 300px;
+    }
+}
+
+
+
+@media (min-device-width:450px) and (max-device-width: 700px) { 
+    .Footer > .container {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+}
+

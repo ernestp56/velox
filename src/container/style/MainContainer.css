@@ -26,3 +26,29 @@
     opacity: 60%;
     color: #fff;
 }
+
+@media (max-width: 760px) {
+    .col-1, .col-2, .col-3 {
+        width: 100%;
+    }
+}
+
+@media (max-width: 450px) {
+    .main-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-device-width:450px) and (max-device-width: 700px) {
+    .main-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    
+}
+
+@media (min-width: 750px) {
+    .main-container {
+        padding: 0em 2em 2em 2em;
+    }
+}

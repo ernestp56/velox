@@ -1,0 +1,46 @@
+.slide {
+	flex-shrink: 0;
+	line-height: 1.4;
+	text-align: center;
+    width: 100%;
+    padding: 0 1em 0 1em;
+}
+
+.slide > img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+
+@media (max-height: 570px) {
+    .slide > img {
+        max-height: 200px;
+    }
+}
+
+@media (max-width: 450px) {
+
+    .slide > img {
+        max-height: 300px;
+    }
+}
+
+@media (min-width: 450) and (max-width: 700px) {
+
+    .slide > img {
+        max-height: 350px;
+    }
+}
+
+@media (min-width: 700px) and (max-width:900px) {
+    .slide > img {
+        max-height: 500px;
+    }
+}
+
+@media (min-width: 1000px) {
+    .slide > img {
+        max-height: 700px;
+    }
+}
