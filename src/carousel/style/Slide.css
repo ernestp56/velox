@@ -26,14 +26,21 @@
     }
 }
 
-@media (min-width: 450) and (max-width: 700px) {
+@media (min-width: 450) and (max-width: 600px) {
 
     .slide > img {
         max-height: 350px;
     }
 }
 
-@media (min-width: 700px) and (max-width:900px) {
+@media (min-width: 600) and (max-width: 800px) {
+
+    .slide > img {
+        max-height: 400px;
+    }
+}
+
+@media (min-width: 800px) and (max-width:1000px) {
     .slide > img {
         max-height: 500px;
     }

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import "./style/Carousel.css"
+import "./style/Slide.css"
 
 class Slide extends Component {
     constructor() {
