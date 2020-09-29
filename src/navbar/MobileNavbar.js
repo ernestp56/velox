@@ -13,8 +13,10 @@ class MobileNavbar extends Component {
   toggleOverlay() {
     if (this.state.active) {
       this.setState({ active: false })
+      document.body.style.overflow = "";
     } else {
       this.setState({ active: true })
+      document.body.style.overflow = "hidden";
     }
   }
   
