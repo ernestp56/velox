@@ -28,8 +28,7 @@ class Header extends Component {
                     <MobileNavbar />
                     ) : (
                     <DesktopNavbar />
-                    )
-                }
+                    )}
             </header>
         )
     }
