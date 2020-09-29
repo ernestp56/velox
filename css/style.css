@@ -141,12 +141,12 @@ padding-top: 60px;
 
 .icon.active .hamburger:before {
     top: 0;
-    transform: rotate(45deg)
+    transform: rotate(225deg)
 }
 
 .icon.active .hamburger:after {
     top: 0;
-    transform: rotate(135deg)
+    transform: rotate(315deg)
 }
 
 .contact-header {
@@ -408,7 +408,10 @@ padding-top: 60px;
 @media (min-device-width:450px) and (max-device-width: 700px) {
     .main-container {
         grid-template-columns: 1fr 1fr;
-        
+    }
+    
+    .Footer > .container {
+        grid-template-columns: 1fr 1fr;
     }
     
     .carousel-wrapper {
