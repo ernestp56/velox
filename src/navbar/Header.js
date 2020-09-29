@@ -7,12 +7,16 @@ class Header extends Component {
     constructor() {
         super();
         this.state = {
-            mobile: true
+            mobile: this.isMobile()
         }
+    }
 
+    isMobile() {
+        return window.screen.width < 600 ? true : false;
     }
 
     render() {
+        
         const mql = window.matchMedia('(max-width: 600px)');
             mql.addEventListener('change', (e) => {
             const mobileView = e.matches;
@@ -23,7 +27,7 @@ class Header extends Component {
             }
         });
         return (
-            <header id="navbar">
+            <header>
                 {this.state.mobile ? (
                     <MobileNavbar />
                     ) : (

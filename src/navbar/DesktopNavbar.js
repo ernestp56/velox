@@ -9,12 +9,12 @@ class DesktopNavbar extends Component {
 
   render() {
       return (
-        <div class="top-menu desktop" id="top-menu-desktop">
+        <div className="top-menu desktop" id="top-menu-desktop">
             <div></div>
-            <div class="logo">velox</div>
-            <div class="info">
-                <h4 class="about-header">About us</h4>
-                <h4 class="contact-header">Contact</h4>
+            <div className="logo">velox</div>
+            <div className="info">
+                <h4 className="about-header">About us</h4>
+                <h4 className="contact-header">Contact</h4>
             </div>
         </div>
       )

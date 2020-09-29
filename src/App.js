@@ -1,6 +1,6 @@
 import React from 'react';
 import './style.css';
-import Header from './menu/Header'
+import Header from './navbar/Header'
 
 function App() {
 
