@@ -4,3 +4,11 @@ header {
     background-color: #fff!important;
     z-index: 1;
 }
+
+.logo {
+    font-family: 'Syncopate', sans-serif;
+    justify-self: center;
+    padding-top: 5px;
+    font-weight: 700;
+    font-size: 1.5em;
+}

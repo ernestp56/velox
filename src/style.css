@@ -14,10 +14,6 @@ body {
     margin: 0;
 }
 
-/* img {
-} */
-
-
 /* button{
     position: absolute;
     background: none;
@@ -57,45 +53,6 @@ h4 {
     justify-self: end;
 }
 
-.logo {
-    font-family: 'Syncopate', sans-serif;
-    justify-self: center;
-    padding-top: 5px;
-    font-weight: 700;
-    font-size: 1.5em;
-}
-
-/* MAIN BODY */
-
-.main-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 1em;
-    max-width: 1200px;
-    margin: 0 auto;
-    overflow-y: auto;
-    padding-bottom: 72px;;
-}
-
-.columns {
-    display: flex;
-    padding: 0 24px;
-    margin: 1em 0;
-    align-items: flex-start;
-}
-
-.col {
-    padding: 1em;
-}
-
-
-.col-bg { 
-    background-color: #516693;
-    opacity: 60%;
-    color: #fff;
-}
-
-
 /*  MEDIA QUERIES */
 
 @media (max-width: 760px) {
@@ -117,38 +74,6 @@ h4 {
 
 /* FOOTER */
 
-.Footer {
-    display: grid;
-    padding: 72px;
-    background-color: #212a2f;
-    font-size: 0.8em;
-}
-
-.container {
-    max-width: 1200px;
-    min-width: 250px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 2fr;
-    grid-gap:1em;
-    grid-auto-rows: minmax(100px, auto);
-    /* justify-items:center; */
-    padding: 0 2em;
-    margin: 0 auto;
-}
-
-.container > div {
-    color: #fff;
-    padding: 1em 1em 2em 1em;
-    /* background-color: #eee; */
-}
-
-.box > ul {
-    padding: 0.5em 0 0.5em 0;
-}
-
-.box > ul > img {
-    padding: 0.5em 1em 0em 0em;
-}
 
 @media (max-width: 450px) {
     .main-container {
@@ -201,7 +126,6 @@ h4 {
     }
     
 }
-
 
 @media (max-height: 570px) {
     .slide > img {
