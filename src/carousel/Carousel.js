@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Slide from './Slide'
 
 class Carousel extends Component {
     constructor() {
@@ -6,25 +7,23 @@ class Carousel extends Component {
         this.state = {}
     }
 
+    listSlides() {
+        const images = {"Product - bottle": "bottle.jpg", "Product - set": ".set.jpg" , "Product - cure": "cure.jpg"};
+        const keys = Object.keys(images)
+        return keys.map((key, index) => {
+            return (
+                <Slide key = {index} alt = {key} img = {images[key]} />
+            )
+        })
+    }
+
 
     render() {
         return ( 
             <div className="carousel-wrapper">
-                <section class="carousel">
+                <section className="carousel">
                     <nav />
-                    <div class="slide-container">
-                        <div class="slide">
-                            <img src="public/product/bottle.jpg" alt="Product - Bottle" />
-                            <div class="prev">&#10094;</div>
-                            <div class="next">&#10095;</div>
-                        </div>
-                        <div class="slide">
-                            <img src="public/product/set.jpg" alt="Product - Set" />
-                        </div>
-                        <div class="slide">
-                            <img src="public/product/cure.jpg" alt="Product - Cure" />
-                        </div>
-                    </div>
+                    <div className="slide-container">{this.listSlides()}</div>
                 </section>
             </div>
         )
