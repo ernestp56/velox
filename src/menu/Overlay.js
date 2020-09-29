@@ -8,7 +8,6 @@ class Overlay extends Component {
     }
 
     componentDidUpdate(prevProps) {
-        console.log(prevProps)
         if (prevProps.active !== this.props.active) {
           this.setState({ active: this.props.active })
         }
