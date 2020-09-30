@@ -20,7 +20,7 @@ class DemoCarousel extends Component {
 
     render() {
         return (
-            <Carousel autoPlay={false} showArrows={true}>
+            <Carousel autoPlay={false} showArrows={true} infiniteLoop={true}>
                 {this.listSlides()}
             </Carousel>
         );
