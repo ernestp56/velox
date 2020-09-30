@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import { Carousel } from 'react-responsive-carousel';
-import Slide from './Slide'
 import './style/Carousel.css'
- 
-class DemoCarousel extends Component {
+import Slide from './Slide'
 
-    
+class Carousel extends Component {
+    constructor() {
+        super();
+        this.state = {}
+    }
+
     listSlides() {
         const images = {"Product - bottle": "bottle.jpg", "Product - set": "set.jpg" , "Product - cure": "cure.jpg"};
         const keys = Object.keys(images)
@@ -18,13 +18,17 @@ class DemoCarousel extends Component {
         })
     }
 
+
     render() {
-        return (
-            <Carousel autoPlay={false} showArrows={true}>
-                {this.listSlides()}
-            </Carousel>
-        );
+        return ( 
+            <div className="carousel-wrapper">
+                <section className="carousel">
+                    <nav />
+                    <div className="slide-container">{this.listSlides()}</div>
+                </section>
+            </div>
+        )
     }
-};
- 
-export default DemoCarousel
+}
+
+export default Carousel

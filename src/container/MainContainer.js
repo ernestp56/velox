@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './style/MainContainer.css'
 import Carousel from '../carousel/Carousel'
+import DemoCarousel from '../carousel/Carousel';
 
 class MainContainer extends Component {
     constructor() {
@@ -12,7 +13,7 @@ class MainContainer extends Component {
     render() {
         return (
             <div className="main-container">
-                <Carousel />
+                <DemoCarousel />
                 <div className="col col-1">
                     <h2>Dolor sit</h2>
                     <p>

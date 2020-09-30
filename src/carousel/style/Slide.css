@@ -1,33 +1,6 @@
-.slide {
-	flex-shrink: 0;
-	line-height: 1.4;
-	text-align: center;
-    width: 100%;
-    padding: 0 1em 0 1em;
-}
-
-.prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: #000;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-}
-.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-
-.prev {
-    left: 0;
-    border-radius: 3px 0 0 3px;
+.slide > img {
+    max-height: auto;
+    object-fit: cover;
 }
 
 @media (max-height: 570px) {
