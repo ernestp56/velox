@@ -10,7 +10,7 @@ class Slide extends Component {
     render() {
         return (
             <div className="slide">
-                <img src={`${process.env.PUBLIC_URL}/assets/` + this.props.img} alt={this.props.alt} />
+                <img className="image" src={`${process.env.PUBLIC_URL}/assets/` + this.props.img} alt={this.props.alt} />
                 <div className="prev">&#10094;</div>
                 <div className="next">&#10095;</div>
             </div>

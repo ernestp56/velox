@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './style/Carousel.css'
 import Slide from './Slide'
 
 class Carousel extends Component {
@@ -8,7 +9,7 @@ class Carousel extends Component {
     }
 
     listSlides() {
-        const images = {"Product - bottle": "bottle.jpg", "Product - set": ".set.jpg" , "Product - cure": "cure.jpg"};
+        const images = {"Product - bottle": "bottle.jpg", "Product - set": "set.jpg" , "Product - cure": "cure.jpg"};
         const keys = Object.keys(images)
         return keys.map((key, index) => {
             return (
