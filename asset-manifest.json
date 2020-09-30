@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/velox/static/css/main.926cddff.chunk.css",
+    "main.css": "/velox/static/css/main.bed22ccc.chunk.css",
     "main.js": "/velox/static/js/main.9e4270ec.chunk.js",
     "main.js.map": "/velox/static/js/main.9e4270ec.chunk.js.map",
     "runtime-main.js": "/velox/static/js/runtime-main.336f0755.js",
@@ -9,17 +9,17 @@
     "static/js/2.608306ff.chunk.js": "/velox/static/js/2.608306ff.chunk.js",
     "static/js/2.608306ff.chunk.js.map": "/velox/static/js/2.608306ff.chunk.js.map",
     "index.html": "/velox/index.html",
-    "precache-manifest.b59055f7f3e07d5ad5cf05608a9fda93.js": "/velox/precache-manifest.b59055f7f3e07d5ad5cf05608a9fda93.js",
+    "precache-manifest.e67f8ec7de1d5bfcb32f4eada32f6962.js": "/velox/precache-manifest.e67f8ec7de1d5bfcb32f4eada32f6962.js",
     "service-worker.js": "/velox/service-worker.js",
     "static/css/2.fb346933.chunk.css.map": "/velox/static/css/2.fb346933.chunk.css.map",
-    "static/css/main.926cddff.chunk.css.map": "/velox/static/css/main.926cddff.chunk.css.map",
+    "static/css/main.bed22ccc.chunk.css.map": "/velox/static/css/main.bed22ccc.chunk.css.map",
     "static/js/2.608306ff.chunk.js.LICENSE.txt": "/velox/static/js/2.608306ff.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.336f0755.js",
     "static/css/2.fb346933.chunk.css",
     "static/js/2.608306ff.chunk.js",
-    "static/css/main.926cddff.chunk.css",
+    "static/css/main.bed22ccc.chunk.css",
     "static/js/main.9e4270ec.chunk.js"
   ]
 }
