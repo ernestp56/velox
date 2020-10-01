@@ -5,10 +5,10 @@ import {
     Route,
     Link
   } from "react-router-dom";
-import './style/DesktopNavbar.css';
-import './style/Header.css'
-import './style/MobileNavbar.css';
-import './style/Overlay.css'
+import '../navbar/style/DesktopNavbar.css';
+import '../navbar/style/Header.css'
+import '../navbar/style/MobileNavbar.css';
+import '../navbar/style/Overlay.css'
 import Home from '../container/Home'
 import Footer from '../footer/Footer'
 
