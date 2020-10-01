@@ -57,7 +57,7 @@ class Routing extends Component {
         return (
             <Router>
                 <div>
-                    <header>
+                    <div className="navbar">
                         {this.state.mobile ? (
                             <div>
                                 <div className="top-menu mobile" id="top-menu-mobile">
@@ -86,7 +86,7 @@ class Routing extends Component {
                                 </div>
                             </div>
                             )}
-                    </header>
+                    </div>
                     
                     <Switch>
                         <Route path="/about">
