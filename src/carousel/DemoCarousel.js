@@ -24,7 +24,7 @@ class DemoCarousel extends Component {
 
     render() {
         return (
-            <Carousel infiniteLoop={true}>
+            <Carousel showThumbs={false} infiniteLoop={true}>
                 {this.listSlides()}
             </Carousel>
         );
