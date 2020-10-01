@@ -9,6 +9,8 @@ import '../navbar/style/DesktopNavbar.css';
 import '../navbar/style/Header.css'
 import '../navbar/style/MobileNavbar.css';
 import '../navbar/style/Overlay.css'
+import About from '../container/About'
+import Contact from '../container/Contact'
 import Home from '../container/Home'
 import Footer from '../footer/Footer'
 
@@ -88,10 +90,10 @@ class Routing extends Component {
                     
                     <Switch>
                         <Route path="/about">
-                            <div>about us</div>
+                            <About />
                         </Route>
                         <Route path="/contact">
-                            <div>contact</div>
+                            <Contact />
                         </Route>
                         <Route path="/">
                             <Home />
