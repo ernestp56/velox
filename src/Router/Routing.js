@@ -33,11 +33,11 @@ class Routing extends Component {
     
     toggleOverlay() {
         if (this.state.active) {
-        this.setState({ active: false })
-        document.body.style.overflow = "";
+            this.setState({ active: false })
+            document.body.style.overflow = "";
         } else {
-        this.setState({ active: true })
-        document.body.style.overflow = "hidden";
+            this.setState({ active: true })
+            document.body.style.overflow = "hidden";
         }
     }
 
@@ -67,9 +67,9 @@ class Routing extends Component {
                                 </div>
                                 <div className={this.state.active ? "overlay active" : "overlay"} >
                                     <div className="overlay-content">
-                                    <Link to="/"><h4 className="about-header">Home</h4></Link>
-                                    <Link to="/about"><h4 className="about-header">About us</h4></Link>
-                                    <Link to="/contact"><h4 className="contact-header">Contact</h4></Link>
+                                    <Link to="/" onClick={this.toggleOverlay.bind(this)}><h4 className="about-header">Home</h4></Link>
+                                    <Link to="/about" onClick={this.toggleOverlay.bind(this)}><h4 className="about-header">About us</h4></Link>
+                                    <Link to="/contact" onClick={this.toggleOverlay.bind(this)}><h4 className="contact-header">Contact</h4></Link>
                                     </div>
                                 </div>
                             </div>
