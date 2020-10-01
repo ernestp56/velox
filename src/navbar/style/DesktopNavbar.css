@@ -4,7 +4,7 @@
 }
 
 .desktop {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 2fr 1fr 2fr;
 }
 
 .info {
@@ -72,16 +72,30 @@ padding-top: 60px;
 }
 
 .contact-header {
-    justify-self: center;
-    text-decoration: none;
+    justify-self: center!important;
 }
 
 .about-header {
     white-space: nowrap;
+}
+
+.info > * {
     text-decoration: none;
 }
 
+@media (min-width: 700px) and (max-width: 850px) {
+    .info {
+        grid-gap: 0;
+    }
+}
+
 @media (min-width: 1000px) {
+    .desktop {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 1400px) {
     .desktop {
         grid-template-columns: 1fr 3fr 1fr;
     }

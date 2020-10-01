@@ -67,9 +67,9 @@ class Routing extends Component {
                                 </div>
                                 <div className={this.state.active ? "overlay active" : "overlay"} >
                                     <div className="overlay-content">
-                                    <Link to="/" className="about-header">Home</Link>
-                                    <Link to="/about" className="about-header">About us</Link>
-                                    <Link to="/contact" className="contact-header">Contact</Link>
+                                    <Link to="/"><h4 className="about-header">Home</h4></Link>
+                                    <Link to="/about"><h4 className="about-header">About us</h4></Link>
+                                    <Link to="/contact"><h4 className="contact-header">Contact</h4></Link>
                                     </div>
                                 </div>
                             </div>
@@ -78,9 +78,9 @@ class Routing extends Component {
                                 <div></div>
                                 <div className="logo">velox</div>
                                 <div className="info">
-                                    <Link to="/" className="about-header">Home</Link>
-                                    <Link to="/about" className="about-header">About us</Link>
-                                    <Link to="/contact" className="contact-header">Contact</Link>
+                                    <Link to="/" className="about-header"><h4>Home</h4></Link>
+                                    <Link to="/about" className="about-header"><h4>About us</h4></Link>
+                                    <Link to="/contact" className="contact-header"><h4>Contact</h4></Link>
                                 </div>
                             </div>
                             )}
