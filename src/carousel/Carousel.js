@@ -6,8 +6,11 @@ import Slide from './Slide'
 import './style/Carousel.css'
  
 class DemoCarousel extends Component {
+    constructor() {
+        super();
+        this.state = {}
+    }
 
-    
     listSlides() {
         const images = {"Product - bottle": "bottle.jpg", "Product - set": "set.jpg" , "Product - cure": "cure.jpg"};
         const keys = Object.keys(images)
@@ -18,13 +21,14 @@ class DemoCarousel extends Component {
         })
     }
 
+
     render() {
         return (
-            <Carousel autoPlay={false} showArrows={true} infiniteLoop={true}>
+            <Carousel>
                 {this.listSlides()}
             </Carousel>
         );
     }
 };
- 
+
 export default DemoCarousel
