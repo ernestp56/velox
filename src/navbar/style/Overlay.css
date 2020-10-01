@@ -2,7 +2,7 @@
     height: 0%;
     width: 100%;
     position: fixed;
-    z-index: 2;
+    z-index: 10;
     top: 60px;
     left: 0;
     background-color: #fff;
@@ -21,7 +21,7 @@
     overflow-y: hidden;
 }
 
-.overlay div {
+.overlay a {
     padding: 8px;
     text-decoration: none;
     font-size: 36px;

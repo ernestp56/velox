@@ -7,11 +7,6 @@
     grid-template-columns:1fr 4fr 1fr;
 }
 
-.info {
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-}
-
 .sticky {
     position: sticky;
     position: -webkit-sticky;
@@ -67,12 +62,4 @@ padding-top: 60px;
 .icon.active .hamburger:after {
     top: 0;
     transform: rotate(135deg)
-}
-
-.contact-header {
-    justify-self: start;
-}
-
-.about-header {
-    white-space: nowrap;
 }

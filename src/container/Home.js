@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
-import './style/MainContainer.css'
-import Carousel from '../carousel/Carousel'
+import './style/Home.css'
 import DemoCarousel from '../carousel/Carousel';
 
-class MainContainer extends Component {
+class Home extends Component {
     constructor() {
         super();
         this.state = {}
@@ -40,19 +39,18 @@ class MainContainer extends Component {
                         Dolor smth 
                     </h2>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                        
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                     </p>
                 </div>
 
-                {/* <div className="col col-1 col-bg">
+                <div className="col col-1 col-bg">
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                     </p>
-                </div> */}
+                </div>
             </div>
         )
     }
 }
 
-export default MainContainer
+export default Home
