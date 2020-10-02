@@ -1,6 +1,7 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
+import { render } from 'react-dom'
+import Root from './components/Root';
 
+const store = createStore(todoApp)
 
-ReactDOM.render(<App />, document.getElementById("root"));
+render(<Root store={store} />, document.getElementById("root"));
