@@ -9,9 +9,9 @@ import '../navbar/style/DesktopNavbar.css';
 import '../navbar/style/Header.css'
 import '../navbar/style/MobileNavbar.css';
 import '../navbar/style/Overlay.css'
-import About from '../../container/About'
-import Contact from '../../container/Contact'
-import Home from '../../container/Home'
+import About from '../container/About'
+import Contact from '../container/Contact'
+import Home from '../container/Home'
 import Footer from '../footer/Footer'
 
 class Routing extends Component {
