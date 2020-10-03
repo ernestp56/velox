@@ -25,8 +25,6 @@ class Routing extends Component {
         }
     }
 
-    component
-
     componentDidUpdate(prevProps) {
         if (prevProps.active !== this.props.active) {
           this.setState({ active: this.props.active })
