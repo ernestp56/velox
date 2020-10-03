@@ -6,13 +6,15 @@ import {
     Link
   } from "react-router-dom";
 import '../navbar/style/DesktopNavbar.css';
-import '../navbar/style/Header.css'
+import '../navbar/style/Header.css';
 import '../navbar/style/MobileNavbar.css';
-import '../navbar/style/Overlay.css'
-import About from '../container/About'
-import Contact from '../container/Contact'
-import Home from '../container/Home'
-import Footer from '../footer/Footer'
+import '../navbar/style/Overlay.css';
+import About from '../container/About';
+import Contact from '../container/Contact';
+import Home from '../container/Home';
+import Footer from '../footer/Footer';
+import connect from 'react-redux';
+import { fetchPosts } from '../../actions/postActions'
 
 class Routing extends Component {
     constructor() {
@@ -22,6 +24,8 @@ class Routing extends Component {
             active: false
         }
     }
+
+    component
 
     componentDidUpdate(prevProps) {
         if (prevProps.active !== this.props.active) {
