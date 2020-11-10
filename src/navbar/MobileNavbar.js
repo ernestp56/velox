@@ -24,7 +24,6 @@ class MobileNavbar extends Component {
       return (
         <div>
           <div className="top-menu mobile" id="top-menu-mobile">
-              <div></div>
               <div className="logo">velox</div>
               <div className={this.state.active ? "icon active" : "icon"} onClick={this.toggleOverlay.bind(this)}>
                   <div className="hamburger"></div>

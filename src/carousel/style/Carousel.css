@@ -2,7 +2,7 @@
     padding: 1em 1em 0 1em;
 	width: 100%;
     align-self: center;
-    outline: 3px solid #000;
+    /* outline: 3px solid #000; */
 }
 
 .control-prev.control-arrow::before {

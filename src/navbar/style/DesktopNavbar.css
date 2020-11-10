@@ -4,7 +4,8 @@
 }
 
 .desktop {
-    grid-template-columns: 2fr 1fr 2fr;
+    grid-template-columns: 1fr 2fr 1fr;
+    justify-items: center;
 }
 
 .info {
@@ -20,10 +21,6 @@
     top: 0;
     z-index: 2;
 }
-
-/* .sticky + .content {
-padding-top: 60px;
-} */
 
 .icon {
     justify-self: center;
@@ -83,6 +80,10 @@ padding-top: 60px;
     text-decoration: none;
 }
 
+.velox-icon {
+    max-width: 50px;
+}
+
 @media (min-width: 700px) and (max-width: 850px) {
     .info {
         grid-gap: 0;
@@ -91,7 +92,7 @@ padding-top: 60px;
 
 @media (min-width: 1000px) {
     .desktop {
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 2fr 1fr;
     }
 }
 

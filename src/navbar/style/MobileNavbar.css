@@ -4,7 +4,7 @@
 }
 
 .mobile {
-    grid-template-columns:1fr 4fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .sticky {
@@ -14,15 +14,16 @@
     z-index: 2;
 }
 
-/* .sticky + .content {
-padding-top: 60px;
-} */
+.velox-icon {
+    max-width: 50px;
+}
 
 .icon {
-    justify-self: center;
+    justify-self: end;
 }
 
 .hamburger {
+    margin-left: -30px;
     width: 30px;
     height: 4px;
     background: #516693;

@@ -17,8 +17,8 @@ class Overlay extends Component {
         return (
             <div className={this.state.active ? "overlay active" : "overlay"} >
                 <div className="overlay-content">
-                    <div>About us</div>
-                    <div>Contact</div>
+                    <div>Om oss</div>
+                    <div>Kontakt</div>
                 </div>
             </div>
         )

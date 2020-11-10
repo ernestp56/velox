@@ -1,18 +1,13 @@
 import React, { Component } from "react";
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    Link
-  } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import '../navbar/style/DesktopNavbar.css';
-import '../navbar/style/Header.css'
+import '../navbar/style/Header.css';
 import '../navbar/style/MobileNavbar.css';
-import '../navbar/style/Overlay.css'
-import About from '../container/About'
-import Contact from '../container/Contact'
-import Home from '../container/Home'
-import Footer from '../footer/Footer'
+import '../navbar/style/Overlay.css';
+import About from '../container/About';
+import Contact from '../container/Contact';
+import Home from '../container/Home';
+import Footer from '../footer/Footer';
 
 class Routing extends Component {
     constructor() {
@@ -30,7 +25,7 @@ class Routing extends Component {
     }
 
     isMobile() {
-        return window.screen.width < 600 ? true : false;
+        return window.screen.width < 900 ? true : false;
     }
     
     toggleOverlay() {
@@ -44,7 +39,7 @@ class Routing extends Component {
     }
 
     render() {
-        const mql = window.matchMedia('(max-width: 700px)');
+        const mql = window.matchMedia('(max-width: 900px)');
             mql.addEventListener('change', (e) => {
             const mobileView = e.matches;
             if (mobileView) {
@@ -61,8 +56,10 @@ class Routing extends Component {
                         {this.state.mobile ? (
                             <div>
                                 <div className="top-menu mobile" id="top-menu-mobile">
+                                    {/* eslint-disable-next-line */}
+                                    <img className="velox-icon" src={`${process.env.PUBLIC_URL}/` + 'velox_icon.jpg'} alt={'velox_icon'} />
+                                    {/* <div className="logo">velox</div> */}
                                     <div></div>
-                                    <div className="logo">velox</div>
                                     <div className={this.state.active ? "icon active" : "icon"} onClick={this.toggleOverlay.bind(this)}>
                                         <div className="hamburger"></div>
                                     </div>
@@ -70,19 +67,21 @@ class Routing extends Component {
                                 <div className={this.state.active ? "overlay active" : "overlay"} >
                                     <div className="overlay-content">
                                     <Link to="/" onClick={this.toggleOverlay.bind(this)}><h4 className="about-header">Home</h4></Link>
-                                    <Link to="/about" onClick={this.toggleOverlay.bind(this)}><h4 className="about-header">About us</h4></Link>
-                                    <Link to="/contact" onClick={this.toggleOverlay.bind(this)}><h4 className="contact-header">Contact</h4></Link>
+                                    <Link to="/about" onClick={this.toggleOverlay.bind(this)}><h4 className="about-header">Om oss</h4></Link>
+                                    <Link to="/contact" onClick={this.toggleOverlay.bind(this)}><h4 className="contact-header">Kontakt</h4></Link>
                                     </div>
                                 </div>
                             </div>
                         ) : (
                             <div className="top-menu desktop" id="top-menu-desktop">
                                 <div></div>
-                                <div className="logo">velox</div>
+                                {/* eslint-disable-next-line */}
+                                <img className="velox-icon" src={`${process.env.PUBLIC_URL}/` + 'velox_icon.jpg'} alt={'velox_icon'} />
+                                {/* <div className="logo">velox</div> */}
                                 <div className="info">
                                     <Link to="/" className="about-header"><h4>Home</h4></Link>
-                                    <Link to="/about" className="about-header"><h4>About us</h4></Link>
-                                    <Link to="/contact" className="contact-header"><h4>Contact</h4></Link>
+                                    <Link to="/about" className="about-header"><h4>Om oss</h4></Link>
+                                    <Link to="/contact" className="contact-header"><h4>Kontakt</h4></Link>
                                 </div>
                             </div>
                             )}
@@ -107,5 +106,4 @@ class Routing extends Component {
         )
     }
 }
-
 export default Routing

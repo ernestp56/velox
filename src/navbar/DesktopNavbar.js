@@ -11,10 +11,11 @@ class DesktopNavbar extends Component {
       return (
         <div className="top-menu desktop" id="top-menu-desktop">
             <div></div>
-            <div className="logo">velox</div>
+            <img src="../../public/velox_icon.jpg" />
+            {/* <div className="logo">velox</div> */}
             <div className="info">
-                <h4 className="about-header">About us</h4>
-                <h4 className="contact-header">Contact</h4>
+                <h4 className="about-header">Om oss</h4>
+                <h4 className="contact-header">Kontakt</h4>
             </div>
         </div>
       )
