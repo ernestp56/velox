@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import './style/DesktopNavbar.css'
+import { Link } from "react-router-dom";
 
 class DesktopNavbar extends Component {
   constructor() {
@@ -9,13 +10,13 @@ class DesktopNavbar extends Component {
 
   render() {
       return (
-        <div className="top-menu desktop" id="top-menu-desktop">
-            <div></div>
-            <img src="../../public/velox_icon.jpg" />
-            {/* <div className="logo">velox</div> */}
+        <div className="top-menu">
+            {/* eslint-disable-next-line */}
+            <img className="velox-icon" src={`${process.env.PUBLIC_URL}/` + 'velox_icon.jpg'} alt={'velox_icon'} />
             <div className="info">
-                <h4 className="about-header">Om oss</h4>
-                <h4 className="contact-header">Kontakt</h4>
+                <Link to="/" className="about-header">Home</Link>
+                <Link to="/about" className="about-header">Om oss</Link>
+                <Link to="/contact" className="contact-header">Kontakt</Link>
             </div>
         </div>
       )

@@ -8,6 +8,7 @@ import About from '../container/About';
 import Contact from '../container/Contact';
 import Home from '../container/Home';
 import Footer from '../footer/Footer';
+import DesktopNavbar from "../navbar/DesktopNavbar";
 
 class Routing extends Component {
     constructor() {
@@ -73,17 +74,7 @@ class Routing extends Component {
                                 </div>
                             </div>
                         ) : (
-                            <div className="top-menu desktop" id="top-menu-desktop">
-                                <div></div>
-                                {/* eslint-disable-next-line */}
-                                <img className="velox-icon" src={`${process.env.PUBLIC_URL}/` + 'velox_icon.jpg'} alt={'velox_icon'} />
-                                {/* <div className="logo">velox</div> */}
-                                <div className="info">
-                                    <Link to="/" className="about-header"><h4>Home</h4></Link>
-                                    <Link to="/about" className="about-header"><h4>Om oss</h4></Link>
-                                    <Link to="/contact" className="contact-header"><h4>Kontakt</h4></Link>
-                                </div>
-                            </div>
+                            <DesktopNavbar />
                             )}
                     </div>
                     

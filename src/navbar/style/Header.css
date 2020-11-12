@@ -1,13 +1,9 @@
 .navbar {
-    padding: 0.5em 1em;
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
-    background-color: #fff!important;
-    z-index: 1;
+    border-bottom: 1px solid #e2e8f0;
+    background-color: rgba(234,234,234,0.15);
 }
 
-.logo {
-    font-family: 'Anton', sans-serif;
-    justify-self: center;
-    font-weight: 400;
-    font-size: 2em;
+.velox-icon {
+    max-width: 3em!important;
+    margin: 0.5em;
 }
