@@ -18,12 +18,16 @@
     height: 100% !important;
 }
 
+.carousel .control-arrow,.carousel.carousel-slider .control-arrow{
+    opacity: 1;
+}
+
 .control-prev.control-arrow::before {
-    border-right: 8px solid #516693!important;
+    border-right: 8px solid #f7ac2b!important;
 }
 
 .control-next.control-arrow::before {
-    border-left: 8px solid #516693!important;
+    border-left: 8px solid #f7ac2b!important;
 }
 
 .control-prev.control-arrow:hover {
