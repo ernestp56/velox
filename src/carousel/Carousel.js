@@ -10,6 +10,10 @@ class ImgCarousel extends Component {
         this.state = {}
     }
 
+    isMobile() {
+        return window.screen.width < 550 ? true : false;
+    }
+
     listSlides() {
         const images = {"Product - bottle": "velox_01 (2).png", "Product - set": "velox_02.png"};
         const keys = Object.keys(images)
@@ -20,11 +24,24 @@ class ImgCarousel extends Component {
         })
     }
 
+    listLargeSlides() {
+        const images = {"Product - bottle 1": "bottle.png", "Product - bottle 2": "bottle_2.png", "Product - bottle 3": "bottle_3.png"};
+        const keys = Object.keys(images)
+        return keys.map((key, index) => {
+            return (
+                <Slide key = {index} alt = {key} img = {images[key]} />
+            )
+        })
+    }
 
     render() {
         return (
             <Carousel showThumbs={false} infiniteLoop={true}>
-                {this.listSlides()}
+                {this.isMobile() ? 
+                    this.listLargeSlides()
+                    : 
+                    this.listSlides()
+                }
             </Carousel>
         );
     }
