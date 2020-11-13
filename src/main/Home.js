@@ -12,6 +12,12 @@ class Home extends Component {
     render() {
         return (
             <div className="main-container">
+                <div className="headline-wrapper">
+                    <div className="headline-container">
+                        <h1>Title here</h1>
+                        <div className="extraInfo-container">some extra title in small font</div>
+                    </div>
+                </div>
                 <ImgCarousel />
                 <div className="col col-2">
                     <h2>Dolor</h2>
