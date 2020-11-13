@@ -13,7 +13,7 @@ class DesktopNavbar extends Component {
         <div className="top-menu">
             {/* eslint-disable-next-line */}
             <img className="velox-icon" src={`${process.env.PUBLIC_URL}/` + 'velox_icon.jpg'} alt={'velox_icon'} />
-            <div className="info">
+            <div className="links">
               {this.props.children}
             </div>
         </div>

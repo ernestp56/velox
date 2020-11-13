@@ -9,7 +9,7 @@
     background-color: #fff;
     transition: 0.5s;
     overflow: hidden;
-    /* box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.1); */
+    opacity: 0.95;
 }
 
 .overlay-content {

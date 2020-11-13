@@ -6,24 +6,25 @@
     padding: 0 5px;
 }
 
-.info {
+.links {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 1em;
     justify-items: end;
-    border-bottom: 1px dotted transparent;
 }
 
-.info > a {
+.links > a {
     padding-top: 5px;
+    border-bottom: 1px solid transparent;
 }
 
-.info > a:hover {
+.links > a:hover {
     border-bottom: 1px dotted #000;
+    font-weight: 700;
 }
 
 @media (min-width: 700px) and (max-width: 850px) {
-    .info {
+    .links {
         grid-gap: 0;
     }
 }
