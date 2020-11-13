@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './Home.css'
-import DemoCarousel from '../carousel/DemoCarousel';
+import ImgCarousel from '../carousel/Carousel';
 
 class Home extends Component {
     constructor() {
@@ -12,7 +12,7 @@ class Home extends Component {
     render() {
         return (
             <div className="main-container">
-                <DemoCarousel />
+                <ImgCarousel />
                 <div className="col col-1">
                     <h2>Dolor sit</h2>
                     <p>

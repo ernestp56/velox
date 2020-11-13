@@ -2,7 +2,20 @@
     padding: 1em 1em 0 1em;
 	width: 100%;
     align-self: center;
+    height: 100%;
     /* outline: 3px solid #000; */
+}
+
+.slider-wrapper {
+    height: 100%;
+}
+
+.slide.selected {
+    height: 100%;
+}
+
+.carousel-style {
+    height: 100% !important;
 }
 
 .control-prev.control-arrow::before {

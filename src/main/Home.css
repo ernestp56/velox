@@ -1,13 +1,13 @@
 
 .main-container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 1em;
-    max-width: 1200px;
+    max-width: 1000px;
     min-height: 100vh;
     margin: 0 auto;
     overflow-y: auto;
-    padding-bottom: 72px;;
+    padding: 2em 0;
 }
 
 .columns {
@@ -18,15 +18,12 @@
 }
 
 .col {
-    /* outline: 3px solid #000; */
     padding: 1em;
-
 }
 
 
 .col-bg { 
     background-color: #516693;
-    /* outline: 3px solid #000; */
     opacity: 0.6;
     color: #fff;
 }
@@ -46,12 +43,5 @@
 @media (min-device-width:450px) and (max-device-width: 700px) {
     .main-container {
         grid-template-columns: 1fr 1fr;
-    }
-
-}
-
-@media (min-width: 701px) {
-    .main-container {
-        padding: 2em 2em 2em 2em;
     }
 }

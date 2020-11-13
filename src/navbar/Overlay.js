@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './Overlay.css'
 
 class Overlay extends Component {
+    // eslint-disable-next-line
     constructor(props) {
         super(props);
     }

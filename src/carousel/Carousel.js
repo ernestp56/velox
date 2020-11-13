@@ -2,16 +2,16 @@ import React, { Component } from 'react';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
 import Slide from './Slide'
-import './style/Carousel.css'
+import './Carousel.css'
  
-class DemoCarousel extends Component {
+class ImgCarousel extends Component {
     constructor() {
         super();
         this.state = {}
     }
 
     listSlides() {
-        const images = {"Product - bottle": "bottle.jpg", "Product - set": "set.jpg" , "Product - cure": "cure.jpg"};
+        const images = {"Product - bottle": "velox_01 (2).png", "Product - set": "velox_02.png"};
         const keys = Object.keys(images)
         return keys.map((key, index) => {
             return (
@@ -30,4 +30,4 @@ class DemoCarousel extends Component {
     }
 };
 
-export default DemoCarousel
+export default ImgCarousel
