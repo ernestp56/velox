@@ -1,0 +1,13 @@
+[debug] [2020-11-13T11:55:58.815Z] ----------------------------------------------------------------------
+[debug] [2020-11-13T11:55:58.817Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\eperk\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2020-11-13T11:55:58.817Z] CLI Version:   8.15.1
+[debug] [2020-11-13T11:55:58.817Z] Platform:      win32
+[debug] [2020-11-13T11:55:58.817Z] Node Version:  v12.18.0
+[debug] [2020-11-13T11:55:58.819Z] Time:          Fri Nov 13 2020 12:55:58 GMT+0100 (Central European Standard Time)
+[debug] [2020-11-13T11:55:58.819Z] ----------------------------------------------------------------------
+[debug] [2020-11-13T11:55:58.819Z] 
+[debug] [2020-11-13T11:55:58.827Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-11-13T11:55:58.828Z] > authorizing via signed-in user
+[debug] [2020-11-13T11:55:58.828Z] [iam] checking project veloxuf for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2020-11-13T11:55:58.831Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/veloxuf:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
