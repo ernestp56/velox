@@ -23,21 +23,16 @@ class Routing extends Component {
     }
 
     isMobile() {
-        return window.screen.width < 900 ? true : false;
+        return window.screen.width < 550 ? true : false;
     }
     
-    toggleOverlay() {
-        if (this.state.active) {
-            this.setState({ active: false })
-            document.body.style.overflow = "";
-        } else {
-            this.setState({ active: true })
-            document.body.style.overflow = "hidden";
-        }
-    }
-
     render() {
-        const mql = window.matchMedia('(max-width: 900px)');
+        const links = <>
+            <Link to="/" className="about-header">Home</Link>
+            <Link to="/about" className="about-header">Om oss</Link>
+            <Link to="/contact" className="contact-header">Kontakt</Link>
+        </>
+        const mql = window.matchMedia('(max-width: 550px)');
             mql.addEventListener('change', (e) => {
             const mobileView = e.matches;
             if (mobileView) {
@@ -52,9 +47,9 @@ class Routing extends Component {
                 <div>
                     <div className="navbar">
                         {this.state.mobile ? (
-                            <MobileNavbar />
+                            <MobileNavbar>{links}</MobileNavbar>
                         ) : (
-                            <DesktopNavbar />
+                            <DesktopNavbar>{links}</DesktopNavbar>
                             )}
                     </div>
                     
@@ -71,10 +66,10 @@ class Routing extends Component {
                     </Switch>
       
                     <Footer />
-
                 </div>
             </Router>
         )
     }
 }
+
 export default Routing

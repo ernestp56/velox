@@ -3,6 +3,7 @@ import './MobileNavbar.css';
 import './shared.css';
 import { Link } from "react-router-dom";
 import Overlay from './Overlay'
+import { isThisTypeNode } from "typescript";
 
 class MobileNavbar extends Component {
   constructor() {
@@ -10,6 +11,10 @@ class MobileNavbar extends Component {
       this.state = {
         active: false
       }
+  }
+
+  handler(val) {
+    this.setState({ active: val });
   }
 
   toggleOverlay() {
@@ -32,14 +37,7 @@ class MobileNavbar extends Component {
                     <div className="hamburger"></div>
                 </div>
             </div>
-            <div className={this.state.active ? "overlay active" : "overlay"} >
-                <div className="overlay-content">
-                <Link to="/" onClick={this.toggleOverlay.bind(this)}><h4 className="about-header">Home</h4></Link>
-                <Link to="/about" onClick={this.toggleOverlay.bind(this)}><h4 className="about-header">Om oss</h4></Link>
-                <Link to="/contact" onClick={this.toggleOverlay.bind(this)}><h4 className="contact-header">Kontakt</h4></Link>
-                </div>
-            </div>
-            <Overlay active = {this.state.active} />
+            <Overlay active={this.state.active} handler={this.handler.bind(this)}>{this.props.children}</Overlay>
         </div>
       )
   }
