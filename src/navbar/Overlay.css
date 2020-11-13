@@ -13,12 +13,11 @@
 }
 
 .overlay-content {
-    position: relative;
-    top: 25%;
-    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr 200px 2fr 1fr;
+    justify-items: center;
     text-align: center;
-    margin-top: 30px;
-    overflow-y: hidden;
+    height: calc(100% - 66px);
 }
 
 .overlay a {
@@ -32,4 +31,13 @@
 
 .overlay.active {
     height: 100%!important;
+}
+
+.social-icons {
+    width: 100%;
+    margin-top: 3em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
 }
