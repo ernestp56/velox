@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import './shared.css'
 
 class About extends Component {
     constructor() {
@@ -10,7 +11,9 @@ class About extends Component {
 
     render() {
         return (
-            <div className="main-container">About us</div>
+            <div className="main-container">
+                <div className="coming-soon">Coming soon!</div>
+            </div>
         )
     }
 }

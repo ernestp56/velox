@@ -29,8 +29,8 @@ class Routing extends Component {
     render() {
         const links = <>
             <Link to="/" className="about-header">Home</Link>
-            <Link to="/about" className="about-header">Om oss</Link>
-            <Link to="/contact" className="contact-header">Kontakt</Link>
+            <Link to="/about" className="about-header">About us</Link>
+            <Link to="/contact" className="contact-header">Contact</Link>
         </>
         const mql = window.matchMedia('(max-width: 550px)');
             mql.addEventListener('change', (e) => {
