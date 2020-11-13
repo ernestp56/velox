@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import './style/DesktopNavbar.css'
+import './DesktopNavbar.css';
+import './shared.css';
 import { Link } from "react-router-dom";
 
 class DesktopNavbar extends Component {

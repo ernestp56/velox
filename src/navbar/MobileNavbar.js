@@ -1,5 +1,7 @@
 import React, { Component } from "react";
-import './style/MobileNavbar.css'
+import './MobileNavbar.css';
+import './shared.css';
+import { Link } from "react-router-dom";
 import Overlay from './Overlay'
 
 class MobileNavbar extends Component {
@@ -23,13 +25,21 @@ class MobileNavbar extends Component {
   render() {
       return (
         <div>
-          <div className="top-menu mobile" id="top-menu-mobile">
-              <div className="logo">velox</div>
-              <div className={this.state.active ? "icon active" : "icon"} onClick={this.toggleOverlay.bind(this)}>
-                  <div className="hamburger"></div>
-              </div>
-          </div>
-          <Overlay active = {this.state.active} />
+            <div className="top-menu mobile" id="top-menu-mobile">
+                {/* eslint-disable-next-line */}
+                <img className="velox-icon-mobile" src={`${process.env.PUBLIC_URL}/` + 'velox_icon.jpg'} alt={'velox_icon'} />
+                <div className={this.state.active ? "icon active" : "icon"} onClick={this.toggleOverlay.bind(this)}>
+                    <div className="hamburger"></div>
+                </div>
+            </div>
+            <div className={this.state.active ? "overlay active" : "overlay"} >
+                <div className="overlay-content">
+                <Link to="/" onClick={this.toggleOverlay.bind(this)}><h4 className="about-header">Home</h4></Link>
+                <Link to="/about" onClick={this.toggleOverlay.bind(this)}><h4 className="about-header">Om oss</h4></Link>
+                <Link to="/contact" onClick={this.toggleOverlay.bind(this)}><h4 className="contact-header">Kontakt</h4></Link>
+                </div>
+            </div>
+            <Overlay active = {this.state.active} />
         </div>
       )
   }

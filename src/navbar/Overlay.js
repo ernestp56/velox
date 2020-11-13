@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './style/Overlay.css'
+import './Overlay.css'
 
 class Overlay extends Component {
     constructor() {

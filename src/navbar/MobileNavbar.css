@@ -1,21 +1,16 @@
 .top-menu{
     display: grid;
     align-items: center;
+    padding: 0 5px;
 }
 
 .mobile {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
 }
 
-.sticky {
-    position: sticky;
-    position: -webkit-sticky;
-    top: 0;
-    z-index: 2;
-}
-
-.velox-icon {
-    max-width: 50px;
+.velox-icon-mobile {
+    max-width: 2em;
+    margin: 0.5em;
 }
 
 .icon {
@@ -23,7 +18,7 @@
 }
 
 .hamburger {
-    margin-left: -30px;
+    margin-left: -3em;
     width: 30px;
     height: 4px;
     background: #516693;
