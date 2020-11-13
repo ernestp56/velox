@@ -1,9 +1,7 @@
 import React, { Component } from "react";
 import './MobileNavbar.css';
 import './shared.css';
-import { Link } from "react-router-dom";
 import Overlay from './Overlay'
-import { isThisTypeNode } from "typescript";
 
 class MobileNavbar extends Component {
   constructor() {

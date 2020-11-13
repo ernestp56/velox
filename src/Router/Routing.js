@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import About from '../container/About';
-import Contact from '../container/Contact';
-import Home from '../container/Home';
+import About from '../main/About';
+import Contact from '../main/Contact';
+import Home from '../main/Home';
 import Footer from '../footer/Footer';
 import DesktopNavbar from "../navbar/DesktopNavbar";
 import MobileNavbar from "../navbar/MobileNavbar";

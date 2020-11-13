@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './style/Home.css'
+import './Home.css'
 import DemoCarousel from '../carousel/DemoCarousel';
 
 class Home extends Component {

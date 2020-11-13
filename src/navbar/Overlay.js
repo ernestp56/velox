@@ -2,9 +2,7 @@ import React, { Component } from 'react';
 import './Overlay.css'
 
 class Overlay extends Component {
-    constructor() {
-        super();
-    }
+    constructor() {}
 
     isActive() {
         return this.props.active ? false : true;
