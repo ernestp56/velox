@@ -1,4 +1,4 @@
-.Footer {
+footer {
     display: grid;
     padding: 4em;
     background-color: rgba(234,234,234,0.15);
@@ -6,7 +6,7 @@
     font-size: 0.8em;
 }
 
-.container {
+section {
     max-width: 1000px;
     min-width: 250px;
     display: grid;
@@ -16,8 +16,12 @@
     margin: 0 auto;
 }
 
-.container > div {
+section > article {
     padding: 1em;
+}
+
+ul {
+    list-style-type: none;
 }
 
 .social-icons-footer {
@@ -29,15 +33,15 @@
 }
 
 @media (max-width: 450px) {
-    .Footer > h3, .box {
+    footer article > * {
         text-align: center;
     }
     
-    .Footer > .container {
+    footer > section {
         grid-template-columns: 1fr;
     }
 
-    .Footer {
+    footer {
         padding: 3em 0;
     }
     
@@ -49,11 +53,11 @@
 
 
 @media (min-device-width:450px) and (max-device-width: 700px) { 
-    .Footer > .container {
+    footer > section {
         grid-template-columns: 1fr 1fr;
     }
     
-    .Footer > .carousel-wrapper {
+    footer > .carousel-wrapper {
         grid-column: 1/3;
     }
     
