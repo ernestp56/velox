@@ -48,6 +48,10 @@
         grid-template-columns: 1fr 1fr;
     }
 
+    .main-container > header h1 {
+        align-self: end;
+    }
+
     .main-container > header {
         grid-column: 1/3;
     }
