@@ -12,43 +12,43 @@ class Home extends Component {
     render() {
         return (
             <div className="main-container">
-                <div className="headline-wrapper">
-                    <div className="headline-container">
-                        <h1>Title here</h1>
-                        <div className="extraInfo-container">some extra title in small font</div>
-                    </div>
-                </div>
+                <header className="header-container">
+                    <h1>Title here</h1>
+                    <p>some extra title in small font</p>
+                </header>
+
                 <ImgCarousel />
-                <div className="col col-2">
+
+                <article>
                     <h2>Dolor</h2>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                     </p>
-                </div>
+                </article>
 
-                <div className="col col-1 col-bg">
+                <article>
                     <h2>And another one</h2>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit
                     </p>
-                </div>
+                </article>
 
-                <div className="col col-1">
+                <article>
                     <h2>Dolor sit</h2>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
                         Lorem ipsum dolor sit amet
                     </p>
-                </div>
+                </article>
 
-                <div className="col col-3">
+                <article>
                     <h2>
                         Dolor sit 
                     </h2>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                     </p>
-                </div>
+                </article>
 {/* 
                 <div className="col col-1 col-bg">
                     <p>
