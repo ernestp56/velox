@@ -17,7 +17,7 @@
     grid-template-rows: 1fr 200px 2fr 1fr;
     justify-items: center;
     text-align: center;
-    height: calc(100% - 66px);
+    height: calc(100% - 3em);
 }
 
 .overlay a {

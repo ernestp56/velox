@@ -57,3 +57,8 @@ a {
     color: #222;
     text-decoration: none;
 }
+
+.navbar {
+    background-color: rgba(234,234,234,0.15);
+    border-bottom: 1px solid #e2e8f0;
+}
