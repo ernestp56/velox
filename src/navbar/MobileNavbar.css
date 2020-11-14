@@ -1,23 +1,20 @@
-.top-menu{
+nav {
     display: grid;
     align-items: center;
     padding: 0 5px;
-}
-
-.mobile {
     grid-template-columns: 1fr 1fr;
 }
 
-.velox-icon-mobile {
+nav > img.mobile{
     max-width: 2em;
     margin: 0.5em;
 }
 
-.icon {
+.hamburger {
     justify-self: end;
 }
 
-.hamburger {
+.hamburger-menu {
     margin-left: -3em;
     width: 30px;
     height: 4px;
@@ -28,8 +25,8 @@
     -webkit-tap-highlight-color:  rgba(0, 0, 0, 0); 
 }
 
-.hamburger:before,
-.hamburger:after {
+.hamburger-menu:before,
+.hamburger-menu:after {
     content: '';
     position: absolute;
     width: 30px;
@@ -38,24 +35,24 @@
     transition: 0.5s;
 }
 
-.hamburger:before {
+.hamburger-menu:before {
     top: -8px;
 }
-.hamburger:after {
+.hamburger-menu:after {
     top: 8px;
 }
 
-.icon.active .hamburger {
+.hamburger.active .hamburger-menu {
     background: rgba(0,0,0,0);
     transform: rotate(90deg)
 }
 
-.icon.active .hamburger:before {
+.hamburger.active .hamburger-menu:before {
     top: 0;
     transform: rotate(225deg)
 }
 
-.icon.active .hamburger:after {
+.hamburger.active .hamburger-menu:after {
     top: 0;
     transform: rotate(135deg)
 }

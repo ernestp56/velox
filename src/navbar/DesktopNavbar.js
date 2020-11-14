@@ -10,8 +10,7 @@ class DesktopNavbar extends Component {
   render() {
       return (
         <nav>
-            {/* eslint-disable-next-line */}
-            <img src={`${process.env.PUBLIC_URL}/` + 'velox_icon.jpg'} alt={'velox_icon'} />
+            <img src={`${process.env.PUBLIC_URL}/velox_icon.jpg`} alt={'velox_icon'} />
             <div className="links">
               {this.props.children}
             </div>

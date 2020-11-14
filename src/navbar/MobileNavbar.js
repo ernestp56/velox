@@ -32,16 +32,15 @@ class MobileNavbar extends Component {
   
   render() {
       return (
-        <div>
-            <div className="top-menu mobile" id="top-menu-mobile">
-                {/* eslint-disable-next-line */}
-                <img className="velox-icon-mobile" src={`${process.env.PUBLIC_URL}/` + 'velox_icon.jpg'} alt={'velox_icon'} />
-                <div className={this.state.active ? "icon active" : "icon"} onClick={this.toggleOverlay.bind(this)}>
-                    <div className="hamburger"></div>
-                </div>
+        <>
+          <nav>
+            <img className="mobile" src={`${process.env.PUBLIC_URL}/velox_icon.jpg`} alt={'velox_icon'} />
+            <div className={this.state.active ? "hamburger active" : "hamburger"} onClick={this.toggleOverlay.bind(this)}>
+                <div className="hamburger-menu"></div>
             </div>
-            <Overlay active={this.state.active} handler={this.handler.bind(this)}>{this.props.children}</Overlay>
-        </div>
+          </nav>
+          <Overlay active={this.state.active} handler={this.handler.bind(this)}>{this.props.children}</Overlay>
+        </>
       )
   }
 }
