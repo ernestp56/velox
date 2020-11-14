@@ -33,12 +33,12 @@ class MobileNavbar extends Component {
   render() {
       return (
         <>
-          <nav>
+          <section>
             <img className="mobile" src={`${process.env.PUBLIC_URL}/velox_icon.jpg`} alt={'velox_icon'} />
             <div className={this.state.active ? "hamburger active" : "hamburger"} onClick={this.toggleOverlay.bind(this)}>
                 <div className="hamburger-menu"></div>
             </div>
-          </nav>
+          </section>
           <Overlay active={this.state.active} handler={this.handler.bind(this)}>{this.props.children}</Overlay>
         </>
       )

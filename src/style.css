@@ -14,23 +14,6 @@ body {
     margin: 0;
 }
 
-/* button{
-    position: absolute;
-    background: none;
-    border: none;
-    transition: background-color 0.3s, color 0.3s; 
-    text-transform: uppercase;
-}
-
-button:hover { 
-    font-weight: 600;
-    -webkit-tap-highlight-color: transparent;
-}
-
-button:focus {
-    outline: none;
-} */
-
 /* TYPOGRAPHY */
 
 h1 {
@@ -58,7 +41,7 @@ a {
     text-decoration: none;
 }
 
-.navbar {
+nav {
     background-color: rgba(234,234,234,0.15);
     border-bottom: 1px solid #e2e8f0;
 }

@@ -28,9 +28,9 @@ class Routing extends Component {
     
     render() {
         const links = <>
-            <Link to="/" className="about-header">Home</Link>
-            <Link to="/about" className="about-header">About us</Link>
-            <Link to="/contact" className="contact-header">Contact</Link>
+            <Link to="/">Home</Link>
+            <Link to="/about">About us</Link>
+            <Link to="/contact">Contact</Link>
         </>
         const mql = window.matchMedia('(max-width: 550px)');
             mql.addEventListener('change', (e) => {
@@ -45,13 +45,13 @@ class Routing extends Component {
         return (
             <Router>
                 <>
-                    <div className="navbar">
+                    <nav>
                         {this.state.mobile ? (
                             <MobileNavbar>{links}</MobileNavbar>
                         ) : (
                             <DesktopNavbar>{links}</DesktopNavbar>
                             )}
-                    </div>
+                    </nav>
                     
                     <Switch>
                         <Route path="/about">

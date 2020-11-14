@@ -1,11 +1,11 @@
-nav {
+nav section {
     display: grid;
     align-items: center;
     padding: 0 5px;
     grid-template-columns: 1fr 1fr;
 }
 
-nav > img.mobile{
+nav section > img.mobile{
     max-width: 2em;
     margin: 0.5em;
 }

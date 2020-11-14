@@ -1,4 +1,4 @@
-nav.desktop {
+nav section.desktop {
     display: grid;
     grid-template-columns: 1fr 250px;
     max-width: 1000px;
@@ -6,7 +6,7 @@ nav.desktop {
     padding: 0 5px;
 }
 
-nav.desktop > img {
+nav section.desktop > img {
     max-width: 3em;
     margin: 0.5em;
 }

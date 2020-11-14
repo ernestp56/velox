@@ -9,12 +9,12 @@ class DesktopNavbar extends Component {
 
   render() {
       return (
-        <nav className="desktop">
+        <section className="desktop">
             <img src={`${process.env.PUBLIC_URL}/velox_icon.jpg`} alt={'velox_icon'} />
             <div className="links">
               {this.props.children}
             </div>
-        </nav>
+        </section>
       )
   }
 }
