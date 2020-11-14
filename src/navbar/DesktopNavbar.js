@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import './DesktopNavbar.css';
-import './shared.css';
 
 class DesktopNavbar extends Component {
   constructor() {
@@ -10,13 +9,13 @@ class DesktopNavbar extends Component {
 
   render() {
       return (
-        <div className="top-menu">
+        <nav>
             {/* eslint-disable-next-line */}
-            <img className="velox-icon" src={`${process.env.PUBLIC_URL}/` + 'velox_icon.jpg'} alt={'velox_icon'} />
+            <img src={`${process.env.PUBLIC_URL}/` + 'velox_icon.jpg'} alt={'velox_icon'} />
             <div className="links">
               {this.props.children}
             </div>
-        </div>
+        </nav>
       )
   }
 }

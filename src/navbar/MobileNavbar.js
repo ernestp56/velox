@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import './MobileNavbar.css';
-import './shared.css';
 import Overlay from './Overlay'
 
 class MobileNavbar extends Component {
