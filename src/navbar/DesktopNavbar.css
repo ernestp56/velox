@@ -11,7 +11,7 @@ nav section.desktop > img {
     margin: 0.5em;
 }
 
-.links {
+section.desktop > header {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 1em;
@@ -19,11 +19,11 @@ nav section.desktop > img {
     justify-items: end;
 }
 
-.links > a {
+section.desktop > a {
     border-bottom: 1px solid transparent;
 }
 
-.links > a:hover {
+section.desktop >  a:hover {
     border-bottom: 1px dotted #000;
     font-weight: 700;
 }

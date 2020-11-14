@@ -11,9 +11,9 @@ class DesktopNavbar extends Component {
       return (
         <section className="desktop">
             <img src={`${process.env.PUBLIC_URL}/velox_icon.jpg`} alt={'velox_icon'} />
-            <div className="links">
+            <header>
               {this.props.children}
-            </div>
+            </header>
         </section>
       )
   }
