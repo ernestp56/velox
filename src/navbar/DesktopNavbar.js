@@ -9,7 +9,7 @@ class DesktopNavbar extends Component {
 
   render() {
       return (
-        <nav>
+        <nav className="desktop">
             <img src={`${process.env.PUBLIC_URL}/velox_icon.jpg`} alt={'velox_icon'} />
             <div className="links">
               {this.props.children}
