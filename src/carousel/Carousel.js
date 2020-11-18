@@ -25,7 +25,8 @@ class ImgCarousel extends Component {
     }
 
     listLargeSlides() {
-        const images = {"Product - bottle 1": "bottle.png", "Product - bottle 2": "bottle_2.png", "Product - bottle 3": "bottle_3.png"};
+        const images = {"Product - bottle 1": "bottle.png", "Product - bottle 2": "bottle_2.png", "Product - bottle 3": "bottle_3.png",
+        "Velox bottles(1)": "velox_4.png", "Velox bottles(2)": "velox_5.png", "Velox bottles(3)": "velox_6.png"};
         const keys = Object.keys(images)
         return keys.map((key, index) => {
             return (
