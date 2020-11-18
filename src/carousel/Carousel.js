@@ -15,7 +15,7 @@ class ImgCarousel extends Component {
     }
 
     listSlides() {
-        const images = {"Product - bottle": "velox_01 (2).png", "Product - set": "velox_02.png"};
+        const images = { "Velox 3": "velox_large_3.png", "Velox 1": "velox_large_1.png", "Velox 2": "velox_large_2.png"};
         const keys = Object.keys(images)
         return keys.map((key, index) => {
             return (
@@ -25,8 +25,8 @@ class ImgCarousel extends Component {
     }
 
     listLargeSlides() {
-        const images = {"Product - bottle 1": "bottle.png", "Product - bottle 2": "bottle_2.png", "Product - bottle 3": "bottle_3.png",
-        "Velox bottles(1)": "velox_4.png", "Velox bottles(2)": "velox_5.png", "Velox bottles(3)": "velox_6.png"};
+        const images = {"Velox 01": "velox_1.png", "Velox 02": "velox_2.png", "Velox 03": "velox_3.png",
+        "Velox 04": "velox_4.png", "Velox 05": "velox_5.png", "Velox 06": "velox_6.png"};
         const keys = Object.keys(images)
         return keys.map((key, index) => {
             return (
