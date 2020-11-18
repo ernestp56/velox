@@ -38,7 +38,7 @@
     background: rgba(0,0,0,0)!important;
 }
 
-@media (min-device-width: 450px) and (max-device-width: 750px) {
+@media (min-width: 450px) and (max-width: 750px) {
     .carousel-root {
         /* padding: 0 0 0 2em; */
         padding: 1em 0;
