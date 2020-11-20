@@ -10,7 +10,7 @@ footer > section {
     max-width: 1000px;
     min-width: 250px;
     display: grid;
-    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 2em;
     grid-auto-rows: minmax(100px, auto);
     margin: 0 auto;

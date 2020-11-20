@@ -21,12 +21,12 @@ class Footer extends Component {
                             <li>FAQ/Contact US</li>
                         </ul>
                     </article>
-                    <article>
+                    {/* <article>
                         <h3>
                             SHOP
                         </h3>
                         <ul><li>do you want this?</li></ul>
-                    </article>
+                    </article> */}
                     <article>
                         <h3>
                             COMPANY
@@ -60,14 +60,14 @@ class Footer extends Component {
                             <li>logo?</li>
                         </ul>
                     </article>
-                    <article>
+                    {/* <article>
                         <h3>
                             SELECT LANGUAGE:
                         </h3>
                         <ul>
                             <li>do you want it too?</li>
                         </ul>
-                    </article>
+                    </article> */}
                 </section>
             </footer>
         )

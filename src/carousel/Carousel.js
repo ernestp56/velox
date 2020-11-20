@@ -25,7 +25,7 @@ class ImgCarousel extends Component {
     }
 
     listLargeSlides() {
-        const images = {"Velox 01": "velox_1.png", "Velox 02": "velox_2.png", "Velox 03": "velox_3.png",
+        const images = {"Velox 01": "from_email.JPG", "Velox 02": "velox_2.png", "Velox 03": "velox_3.png",
         "Velox 04": "velox_4.png", "Velox 05": "velox_5.png", "Velox 06": "velox_6.png"};
         const keys = Object.keys(images)
         return keys.map((key, index) => {

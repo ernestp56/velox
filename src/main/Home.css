@@ -15,6 +15,12 @@
     grid-template-columns: 1fr 1fr;
     border-bottom: 1px solid #e2e8f0;
     margin: 0 1em;
+
+    
+}
+
+h2 {
+    color: #f7ac2b;
 }
 
 .main-container header > p {
@@ -34,11 +40,12 @@
     }
 
     .main-container header {
+        text-align: center;
         grid-template-columns: 1fr;
     }
 
     .main-container header > p {
-        justify-self: start;
+        justify-self: center;
         padding-left: 2px;
     }
 }

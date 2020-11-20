@@ -13,8 +13,8 @@ class Home extends Component {
         return (
             <div className="main-container">
                 <header className="header-container">
-                    <h1>Title here</h1>
-                    <p>some extra title in small font</p>
+                    <h1>Velox</h1>
+                    <p>Effektiv skorengöring</p>
                 </header>
 
                 <ImgCarousel />
