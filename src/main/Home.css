@@ -64,4 +64,12 @@ h2 {
     }
 }
 
+@media (max-width: 1400px) {
+    .main-container {
+        max-width: 800px;
+        font-size: 0.8rem;
+
+    }
+
+}
 /* IF THE HOSTED PAGE IS BLANK AND THROWS AN ERROR ABOUT "<", CHANGE THE HOMEPAGE IN PACKAGE.JSON */
