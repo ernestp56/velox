@@ -12,10 +12,14 @@
 
 .overlay-content {
     display: grid;
-    grid-template-rows: 1fr 200px 2fr 1fr;
+    grid-template-rows: 2fr 200px 2fr 1fr;
     justify-items: center;
     text-align: center;
     height: calc(100% - 3em);
+}
+
+.overlay-content button {
+    margin-top: 2em;
 }
 
 .overlay a {
@@ -38,3 +42,4 @@
     justify-items: center;
     align-items: center;
 }
+
