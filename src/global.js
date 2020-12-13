@@ -12,9 +12,15 @@ export const GlobalStyles = createGlobalStyle`
     border-bottom: 1px solid #e2e8f0;
   }
 
-  a {
+  nav a {
     color: ${({ theme }) => theme.text};
     text-decoration: none;
+    border-bottom: 1px solid transparent;
+  }
+
+  nav a:hover {
+    font-weight: 800;
+    border-bottom 1px solid ${({ theme }) => theme.text};
   }
 
   h1 {
