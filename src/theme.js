@@ -1,5 +1,5 @@
 export const lightTheme = {
-  body: '#g2g2g2',
+  body: '#fff',
   text: '#363537',
   toggleBorder: '#FFF',
   gradient: 'linear-gradient(#39598A, #79D7ED)',

@@ -39,7 +39,7 @@ class MobileNavbar extends Component {
                 <div className="hamburger-menu"></div>
             </div>
           </section>
-          <Overlay active={this.state.active} handler={this.handler.bind(this)}>{this.props.children}</Overlay>
+          <Overlay theme={this.props.theme} active={this.state.active} handler={this.handler.bind(this)}>{this.props.children}</Overlay>
         </>
       )
   }

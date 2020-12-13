@@ -3,10 +3,8 @@
     width: 100%;
     position: fixed;
     z-index: 10;
-    top: 64px;
+    top: 50px;
     left: 0;
-    background-color: #fff;
-    background-color: #fff;
     transition: 0.5s;
     overflow: hidden;
     opacity: 0.95;
@@ -24,7 +22,6 @@
     padding: 8px;
     text-decoration: none;
     font-size: 36px;
-    color: #707070;
     display: block;
     transition: 0.3s;
 }

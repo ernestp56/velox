@@ -24,6 +24,7 @@ export const ToggleContainer = styled.button`
   user-select: none;
   -webkit-tap-highlight-color: transparent;
 
+
   svg {
     height: auto;
     width: 2.5rem;

@@ -46,4 +46,9 @@ export const GlobalStyles = createGlobalStyle`
     min-width: 250px;
     margin: 0;
   }
+
+
+  .hamburger-menu, .hamburger-menu:after, .hamburger-menu:before {
+    background: ${({ theme }) => theme.text};
+  }
 `;

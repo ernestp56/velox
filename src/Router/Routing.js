@@ -21,15 +21,6 @@ function Routing() {
         <Link to="/about">About us</Link>
         <Toggle theme={theme} toggleTheme={toggleTheme} />
     </>
-    const mql = window.matchMedia('(max-width: 550px)');
-        mql.addEventListener('change', (e) => {
-        const mobileView = e.matches;
-        if (mobileView) {
-            this.setState({mobile: true});
-        } else {
-            this.setState({mobile: false});
-        }
-    });
 
     if (!componentMounted) {
         return <div />
@@ -42,7 +33,7 @@ function Routing() {
                 <Router>
                     <>
                         <nav>
-                            <DesktopNavbar>{links}</DesktopNavbar>
+                            <DesktopNavbar theme={themeMode}>{links}</DesktopNavbar>
                         </nav>
                         
                         <Switch>
@@ -57,7 +48,7 @@ function Routing() {
                             </Route>
                         </Switch>
         
-                        <Footer />
+                        <Footer theme={themeMode}/>
                     </>
                 </Router>
             </>
