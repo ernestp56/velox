@@ -1,6 +1,6 @@
 nav section.desktop {
     display: grid;
-    grid-template-columns: 1fr 250px;
+    grid-template-columns: 1fr 200px;
     max-width: 1000px;
     margin: 0 auto;
     padding: 0 5px;
@@ -16,6 +16,7 @@ section.desktop > header {
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 1em;
     justify-items: center;
+    align-items: center;
 }
 
 section.desktop > a {
