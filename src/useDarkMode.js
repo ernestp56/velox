@@ -8,10 +8,12 @@ export const useDarkMode = () => {
     setTheme(mode)
   };
 
-  const toggleTheme = () => {
+  const toggleTheme = (e) => {
     if (theme === 'light') {
+      e.stopPropagation();
       setMode('dark');
     } else {
+      e.stopPropagation();
       setMode('light');
     }
   };
