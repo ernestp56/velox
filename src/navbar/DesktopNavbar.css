@@ -1,6 +1,6 @@
 nav section.desktop {
     display: grid;
-    grid-template-columns: 1fr 200px;
+    grid-template-columns: 1fr 230px;
     max-width: 1000px;
     margin: 0 auto;
     padding: 0 5px;
@@ -21,6 +21,8 @@ section.desktop > header {
 
 section.desktop > a {
     border-bottom: 1px solid transparent;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 section.desktop >  a:hover {
