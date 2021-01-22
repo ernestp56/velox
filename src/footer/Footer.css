@@ -9,10 +9,19 @@ footer > section {
     max-width: 1000px;
     min-width: 250px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-gap: 2em;
     grid-auto-rows: minmax(100px, auto);
     margin: 0 auto;
+}
+
+a {
+    color: #f7ac2b;
+    text-decoration: none !important;
+}
+
+a:hover {
+    text-decoration: underline white !important;
 }
 
 footer > section > article {
@@ -25,7 +34,7 @@ ul {
 
 .social-icons-footer {
     width: 50%;
-    margin: 2em auto 0 0;
+    margin: 2em auto 0 auto;
     display: grid;
     grid-template-columns: auto auto;
     grid-gap: 1em;
@@ -37,7 +46,7 @@ ul {
     footer article > * {
         text-align: center;
     }
-    
+
     footer > section {
         grid-template-columns: 1fr;
     }
@@ -45,7 +54,7 @@ ul {
     footer {
         padding: 3em 0;
     }
-    
+
     .social-icons-footer {
         grid-template-columns: auto auto;
         margin: 2em auto 0 auto;
@@ -53,15 +62,15 @@ ul {
 }
 
 
-@media (min-device-width:450px) and (max-device-width: 700px) { 
+@media (min-device-width:450px) and (max-device-width: 700px) {
     footer > section {
         grid-template-columns: 1fr 1fr;
     }
-    
+
     footer > .carousel-wrapper {
         grid-column: 1/3;
     }
-    
+
 }
 
 
