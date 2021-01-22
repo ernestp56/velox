@@ -50,7 +50,9 @@ class Home extends Component {
 
                             <br/>
                             <br/>
-                            Experience the difference!
+                            <div className="experience">
+                                Experience the difference
+                            </div>
                         </p>
                     </article>
 
@@ -79,9 +81,9 @@ class Home extends Component {
                     </article>
 
                     <article>
-                        <span>
+                        {/* <span>
                             Information
-                        </span>
+                        </span> */}
                         <p>
                             </p>
                     </article>
