@@ -33,13 +33,13 @@ ul {
 }
 
 .social-icons-footer {
-    width: 50%;
-    margin: 2em auto 0 auto;
+    /* width: 50%; */
+    margin: 1em auto 0 auto;
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto;
     grid-gap: 1em;
-    /* justify-items: center; */
-    /* text-align: center; */
+    align-items: center;
+    text-align: center;
 }
 
 @media (max-width: 450px) {
@@ -56,9 +56,17 @@ ul {
     }
 
     .social-icons-footer {
-        grid-template-columns: auto auto;
+        grid-template-columns: auto;
         margin: 2em auto 0 auto;
     }
+}
+
+.copyright {
+    padding: 2px;
+    border-top: 1px solid #e2e8f0;
+    background-color: rgba(234,234,234,0.15);
+    font-size: 0.8em;
+    text-align: center;
 }
 
 
